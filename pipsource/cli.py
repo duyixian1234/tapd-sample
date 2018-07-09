@@ -1,9 +1,11 @@
-import click
-import toml
 import pathlib
 from subprocess import getstatusoutput
-from sources import sources
-from show import current
+
+import click
+import toml
+
+from .show import current
+from .sources import sources
 
 
 @click.group()
@@ -33,14 +35,15 @@ def use(name: str):
         return
     config = toml.load('Pipfile')
     config['source'][0]['name'] = name
-    config['source'] [0]['url'] = sources[name].url
-    toml.dump(config, open('Pipfile','w'))
+    config['source'][0]['url'] = sources[name].url
+    toml.dump(config, open('Pipfile', 'w'))
     status, output = getstatusoutput('pipenv install --skip-lock')
     if status:
         print(output)
     else:
         status, output = getstatusoutput('pipenv lock')
         print(f"Changed Pipfile's source to {name}")
+
 
 def main():
     cli.add_command(list)
