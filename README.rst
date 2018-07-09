@@ -1,5 +1,6 @@
 pipsource
 ---
+
 manage source of pipenv projects
 
 Use
@@ -43,7 +44,7 @@ Install
 
 .. code-block:: shell
     
-    pip install prm
+    pip install pipsource
 
 
 Author
