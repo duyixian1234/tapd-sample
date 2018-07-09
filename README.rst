@@ -16,10 +16,10 @@ Use
     Tencent             https://mirrors.cloud.tencent.com/pypi/simple
 
     Aliyun              https://mirrors.aliyun.com/pypi/simple/
-    $ prm show
+    $ pipsource show
 
     Tencent             https://mirrors.cloud.tencent.com/pypi/simple
-    $ prm use pypi
+    $ pipsource use pypi
     # It may take a long time in a project with many dependencies.
     Changed Pipfile's source to Pypi
     $ prm show
