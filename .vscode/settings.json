@@ -1,2 +1,10 @@
 {
+    "python.pythonPath": "C:\\Users\\duyix\\.virtualenvs\\tapd-sample-zwQIVpU0\\Scripts\\python.exe",
+    "python.unitTest.pyTestArgs": [
+        "tests"
+    ],
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.pyTestEnabled": true,
+    "python.formatting.provider": "yapf"
 }

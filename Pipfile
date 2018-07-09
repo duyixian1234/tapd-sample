@@ -4,6 +4,7 @@ verify_ssl = true
 name = "tencent"
 
 [packages]
+click = "*"
 
 [dev-packages]
 pylint = "*"
