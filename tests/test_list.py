@@ -10,4 +10,4 @@ def test_list_not_empty():
 
 
 def test_list_have_pypi():
-    assert any(source.name == 'Pypi' for source in sources)
+    assert 'Pypi' in sources

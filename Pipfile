@@ -1,15 +1,18 @@
 [[source]]
-url = "https://mirrors.cloud.tencent.com/pypi/simple"
+url = "https://pypi.doubanio.com/simple"
 verify_ssl = true
-name = "tencent"
+name = "Douban"
 
 [packages]
 click = "*"
+toml = "*"
+pipenv = "*"
 
 [dev-packages]
 pylint = "*"
 yapf = "*"
 pytest = "*"
+twine = "*"
 
 [requires]
 python_version = "3.7"
