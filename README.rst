@@ -1,5 +1,5 @@
 pipsource
----
+---------
 
 manage source of pipenv projects
 
@@ -22,7 +22,7 @@ Use
     $ pipsource use pypi
     # It may take a long time in a project with many dependencies.
     Changed Pipfile's source to Pypi
-    $ prm show
+    $ pipsource show
 
     Pypi                https://pypi.org/simple
     $ pipsource --help
